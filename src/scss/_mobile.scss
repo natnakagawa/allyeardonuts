@@ -1,0 +1,154 @@
+body {
+	@include colors($backgroundBlue, $textGrey);
+	font-family: $fontText;
+}
+.wrapper {
+	margin: 0 auto;
+}
+header {
+	@include colors($textGrey, $backgroundRose);
+	@include fontTitle;
+	@include box-shadow(0 8px 6px -6px black);
+	padding: 10px 0 10px 30px;
+	img.logo {
+		width: 60px;
+		padding-right: 0;
+	}
+	h1.title {
+		@include font-size(20px);
+		text-shadow: 5px 4px 5px #000000;
+		margin: 0;
+		padding-right: 0;
+    	padding-left: 5px;
+	}
+	.navbar-default {
+	    background-image: none;
+	    filter: none;
+	    filter: none;
+	    background-repeat: none;
+	    border-radius: none;
+	    box-shadow: none;
+	    background-color: $textGrey;
+	    border-color: none;
+	}
+	.navbar {
+	    position: static;
+	    margin-bottom: 0;
+	    border: none;
+	    padding-right: 0;
+	    padding-left: 0;
+	}
+}
+.navbar-default {
+	.navbar-toggle {
+		background-color: $backgroundRose;
+		&:hover {
+			background-color: $backgroundRose;
+		}
+		&:active {
+			background-color: $backgroundRose;
+		}
+	}
+}
+.navbar-default {
+	.navbar-nav>li>a {
+		padding: 10px 0;
+		color: $backgroundRose;
+		text-decoration: none;
+		@include font-size(18px);
+	}
+	.navbar-nav>li>a:hover {
+		text-decoration: none;
+		color: $backgroundBlue;
+	}
+}
+.donut {
+	img{
+		width: 100%;
+	}
+}
+h1{
+	@include fontTitle;
+}
+h2 {
+	@include font-size(20px);
+	@include fontTitle;
+	margin: 10px 0;
+}
+h2.price {
+	@include font-size(18px);
+	color: $backgroundRose;
+	text-shadow: 2px 2px 4px $textGrey;
+}
+h3 {
+	@include font-size(16px);
+	margin-top: 10px;
+    margin-bottom: 5px;
+}
+p {
+	@include font-size(12px);
+	margin: 0;
+}
+footer {
+	@include colors($textGrey, $backgroundRose);
+	@include fontTitle;
+	@include box-shadow(0 -8px 6px -6px black);
+	padding: 10px 20px;
+	a {
+		@include a;
+	}
+}
+.socialMedia {
+	img {
+		width: 20px;
+		text-align: center;
+	}
+}
+.contact {
+	margin: 20px 0 10px 0;
+	#map {
+		width: 280px;
+	    height: 200px; 
+	    margin-bottom: 20px; 
+	}
+	.address {
+		padding: 0 0 10px 0;
+	}
+}
+.history {
+	padding: 10px 15px;
+	span {
+		@include font-size(10px);
+		padding-bottom: 10px;
+	}
+}
+.homepage {
+	h1 {
+		@include font-size(25px);
+	}
+	h3 {
+		@include font-size(12px);
+		padding-bottom: 10px;
+		margin-top: 0;
+	}
+	img {
+		width: 90%;
+	}
+}
+.slides {
+	display:none;
+}
+.instagram {
+	margin-top: 20px;
+	padding: 5px 5px 10px 5px;
+	background-color: white;
+	h2 {
+		@include font-size(10px);
+		margin-top: 5px;
+		margin-bottom: 0;
+	}
+	img {
+		width: 25%;
+		padding: 5px;
+	}
+}

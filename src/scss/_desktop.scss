@@ -1,0 +1,172 @@
+body {
+	@include colors($backgroundBlue, $textGrey);
+	font-family: $fontText;
+}
+.wrapper {
+	@include box-shadow(0 0 8px 6px #6b7d85);
+	@include wrapperWidth(1024px);
+	background-color: $backgroundRose;
+	margin: 0 auto;
+}
+.headerFooter {
+	@include colors($textGrey, $backgroundRose);
+	@include fontTitle;
+	padding: 20px 0;
+	z-index: 1;
+	position: relative;
+}
+header {
+	@extend .headerFooter;
+	@include box-shadow(0 8px 6px -6px black);
+	img.logo {
+		width: 200px;
+	    margin-left: 70px;
+	    transform: rotate(-10deg);
+	    padding-right: 0;
+	    z-index: 1;
+	    position: absolute;
+	}
+	h1 {
+    	@include font-size(45px);
+    	margin-top: 10px;
+    	margin-left: 260px;
+    	text-shadow: 5px 4px 5px #000000;
+	}
+	nav {
+	    @include font-size(18px);
+	    color: $backgroundRose;
+	}
+	.navbar-default {
+	    background-image: none;
+	    filter: none;
+	    filter: none;
+	    background-repeat: none;
+	    border-radius: none;
+	    box-shadow: none;
+	    background-color: $textGrey;
+	    border-color: none;
+	}
+	.navbar {
+	    position: static;
+	    margin-bottom: 0;
+	    border: none;
+	    padding-right: 0;
+	    padding-left: 0;
+	}
+}
+.navbar-default {
+	.navbar-nav {
+		float: none;
+		padding-top: 80px;
+	}
+	.navbar-nav>li.findUs {
+		padding-left: 30px;
+	}
+	.navbar-nav>li>a {
+		padding: 0;
+		@include a;
+	}
+}
+footer {
+	@extend .headerFooter;
+	@include box-shadow(0 -8px 6px -6px black);
+	@include font-size(16px);
+	padding-left: 200px;
+	img.socialMedia {
+		width: 50px;
+	}
+	img.logo {
+		width: 180px;
+		margin-top: -100px;
+	    transform: scaleX(-1);
+	    z-index: 1;
+	    position: absolute;
+	}
+}
+h1, %h1 {
+	@include fontTitle;
+	margin: 0;
+}
+h2 {
+	@extend %h1;
+}
+h2.price {
+	text-align: right;
+	padding-right: 100px;
+	color: $textGreen;
+	text-shadow: 2px 2px 4px $textGrey;
+}
+h3 {
+	@include font-size(20px);
+}
+#products {
+	padding-top: 20px;
+	margin: 0 20px;
+}
+.theme {
+	padding-bottom: 30px;
+	h2 {
+		padding-bottom: 30px;
+	}
+}
+.donut {
+	display: inline-block;
+	h3 {
+		@include fontTitle;
+		@include font-size(16px);
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+	img {
+		width: 100%;
+	}
+	p.taste {
+		@include font-size(12px);
+		width: 180px;
+		padding-top: 5px;
+	}
+}
+.contact {
+	margin: 30px;
+	#map {
+		width: 400px;
+	    height: 300px;  
+	}
+	.address{
+		padding-left: 50px;
+	}
+	h2 {
+		padding-bottom: 30px;
+	}
+}
+.history {
+	padding: 20px 30px 20px 50px;
+	span {
+		padding-right: 30px;
+	}
+}
+.aboutDonutPic {
+	padding-right: 100px;
+	padding-left: 100px;
+}
+.homepage {
+	padding-top: 30px;
+	text-align: center;
+	h3 {
+		padding-bottom: 20px;
+	}
+}
+#slideshow {
+	padding-left: 200px;
+	.slides {
+		display:none;
+	}
+}
+.instagram {
+	margin-top: 30px;
+	padding: 20px 20px 50px 20px;
+	background-color: white;
+	h2 {
+		padding-bottom: 20px;
+	}
+}

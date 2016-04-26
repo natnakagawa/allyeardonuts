@@ -1,0 +1,44 @@
+// blue color
+$backgroundBlue: #A3C0CC;
+// dark grey color
+$textGrey: #404040;
+// rose color
+$backgroundRose: #FFE5EA;
+// green color
+$textGreen: #7db286;
+// text font-family
+$fontText: 'Poppins', sans-serif;
+// boolean
+$debugging: true;
+// title font-family
+@mixin fontTitle {
+	font-family: 'Chelsea Market', cursive;
+}
+// font-size
+@mixin font-size($px) {
+	@if($debugging) {
+		font-size: $px;
+	}
+}
+// wrapper
+@mixin wrapperWidth($width) {
+	$padding: 15px;
+	width: $width - ($padding * 2);
+}
+// background-color and text color
+@mixin colors($backgroundColor, $textColor) {
+	background-color: $backgroundColor;
+	color: $textColor;
+}
+// box-shadow
+@mixin box-shadow($shadow) {
+	box-shadow : $shadow;
+}
+@mixin a {
+	color: $backgroundRose;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+		color: $backgroundBlue;
+	}
+}

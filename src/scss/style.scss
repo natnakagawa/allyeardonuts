@@ -1,0 +1,20 @@
+@import "variables";
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+   
+          box-sizing: border-box;
+}
+
+@media screen and (max-width : 767px) {
+	@import "mobile";
+}
+
+@media screen and (min-width: 768px) {
+	@import "tablet";
+}
+
+@media screen and (min-width: 1025px) {
+	@import "desktop";
+}
